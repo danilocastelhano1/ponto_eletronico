@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url_base:"http://theraponto.dev.thera.com.br:8088/api/"
 };
 
 /*

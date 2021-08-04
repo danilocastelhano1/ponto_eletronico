@@ -1,20 +1,34 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row style="align-items: center">
+      <ion-col size="4">
+        <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQG1YWMxGc_ehA/company-logo_200_200/0/1568641702034?e=2159024400&v=beta&t=EWLZpAR0lUC8n7S5_VnHSdlgWQ7mbz7e4FLwaOMHTKc">
+      </ion-col>
+      <ion-col size="6">
+        <ion-title size="large" style="color: white!important;">Olá {{getName()}}</ion-title>
+      </ion-col>
+      <ion-col size="2" >
+        <button ion-button (click)="logout()" style="background: #00679c;">
+          <ion-icon name="close-circle-outline" size="large" color="warning"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- <div class="datetime">
+    <strong>{{ today | date:'dd/MM/yyyy' }} - {{ today | date:'HH:mm:ss' }}</strong>
   </div>
+  <div class="timerunning">
+    <strong>Tempo 07:55:22</strong>
+  </div>
+
+  <div class="timerunning">
+    <ion-button fill="outline">Cheguei</ion-button>
+    <ion-button fill="outline">Fui Almoçar</ion-button>
+    <ion-button fill="outline">Voltei</ion-button>
+    <ion-button fill="outline">Fui</ion-button>
+  </div> -->
+  <app-add-schedule></app-add-schedule>
+
+  <app-list-schedules></app-list-schedules>
 </ion-content>

@@ -1,0 +1,27 @@
+.datetime{
+    text-align: center;
+    color: white;
+    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .timerunning{
+    text-align: center;
+    color: #fccd2a;
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  ion-button{
+    --background: #00679c;
+    --border-color: #fccd2a;
+    --color:white;
+    --background-hover:#fccd2a;
+    --color-hover:#00679c;
+    --background-hover-opacity:1;
+    font-weight: bolder;
+  }
+
+  ion-input{
+    --border-radius: 10px;
+    --background: white;
+}

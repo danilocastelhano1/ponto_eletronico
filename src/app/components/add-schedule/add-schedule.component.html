@@ -1,0 +1,56 @@
+<div class="datetime">
+  <strong>{{ today | date:'dd/MM/yyyy' }} - {{ today | date:'HH:mm:ss' }}</strong>
+</div>
+<div class="timerunning">
+  <strong>Tempo {{form.get('tempoTotal').value}}</strong>
+</div>
+
+<div class="timerunning">
+  <ion-button fill="outline" (click)="registraTime(1)">Cheguei</ion-button>
+  <ion-button fill="outline" (click)="registraTime(2)">Fui Almoçar</ion-button>
+  <ion-button fill="outline" (click)="registraTime(3)">Voltei</ion-button>
+  <ion-button fill="outline" (click)="registraTime(4)">Fui</ion-button>
+</div>
+<form [formGroup]="form" class="ion-margin-end">
+  <ion-list style="margin-right: 5px; margin-left: 5px; margin-bottom: 20px;">
+    <div class="row">
+
+        <div class="col-6" style="text-align: center;">
+          <div style="color:#fccd2a">
+            <label>DATA</label>
+          </div>
+          <ion-input formControlName="data" readonly="true"></ion-input>
+        </div>
+        <div class="col-6" style="text-align: center;">
+          <div style="color:#fccd2a">
+            <label>HORA INÍCIO</label>
+          </div>
+          <ion-input formControlName="horaInicio" readonly="true"></ion-input>
+        </div>
+        <div class="col-6" style="text-align: center;">
+          <div style="color:#fccd2a">
+            <label>ALMOÇO INÍCIO</label>
+          </div>
+          <ion-input formControlName="almocoInicio" readonly="true"></ion-input>
+        </div>
+        <div class="col-6" style="text-align: center;">
+          <div style="color:#fccd2a">
+            <label>ALMOÇO FIM</label>
+          </div>
+          <ion-input formControlName="almocoFim" readonly="true"></ion-input>
+        </div>
+        <div class="col-6" style="text-align: center;">
+          <div style="color:#fccd2a">
+            <label>HORA FIM</label>
+          </div>
+          <ion-input formControlName="horaFim" readonly="true"></ion-input>
+        </div>
+        <div class="col-6" style="text-align: center;">
+          <div style="color:#fccd2a">
+            <label>TEMPO</label>
+          </div>
+          <ion-input formControlName="tempoTotal" readonly="true"></ion-input>
+        </div>
+    </div>  
+  </ion-list>
+</form>

@@ -1,0 +1,28 @@
+<ion-content>
+  <ion-grid style="background-color: #00679c;">
+
+    <ion-row>   
+      <ion-col>
+        <div class="ion-text-center">
+          <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQG1YWMxGc_ehA/company-logo_200_200/0/1568641702034?e=2159024400&v=beta&t=EWLZpAR0lUC8n7S5_VnHSdlgWQ7mbz7e4FLwaOMHTKc">  
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>   
+      <ion-slides>
+        <ion-slide>
+          <div class="slide-inner ion-padding">         
+            <ion-input type="email" placeholder="E-Mail" class="inputs" [(ngModel)]="email"></ion-input>          
+            <ion-input type="password" placeholder="Senha" class="inputs" [(ngModel)]="password"></ion-input>
+
+            <ion-button class="ion-margin-top" (click)="login()" expand="block" color="warning">
+              Login
+            </ion-button>
+          </div>
+    
+        </ion-slide>
+    
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+</ion-content>

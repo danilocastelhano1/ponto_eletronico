@@ -1,0 +1,46 @@
+<ion-item-divider color="warning" style="min-height: 1px!important; margin-bottom: 10px;">
+</ion-item-divider>
+
+<ion-list style="margin-right: 5px; margin-left: 5px;">
+  <div class="row" *ngFor="let schedule of schedules">
+
+      <div class="col-6" style="text-align: center;">
+        <div style="color:#fccd2a">
+          <label>DATA</label>
+        </div>
+        <ion-input value={{schedule.start_date}}  readonly="true"></ion-input>
+      </div>
+      <div class="col-6" style="text-align: center;">
+        <div style="color:#fccd2a">
+          <label>HORA INÍCIO</label>
+        </div>
+        <ion-input value={{schedule.start_time}} readonly="true"></ion-input>
+      </div>
+      <div class="col-6" style="text-align: center;">
+        <div style="color:#fccd2a">
+          <label>ALMOÇO INÍCIO</label>
+        </div>
+        <ion-input value={{schedule.start_lunch}}  readonly="true"></ion-input>
+      </div>
+      <div class="col-6" style="text-align: center;">
+        <div style="color:#fccd2a">
+          <label>ALMOÇO FIM</label>
+        </div>
+        <ion-input value={{schedule.end_lunch}}  readonly="true"></ion-input>
+      </div>
+      <div class="col-6" style="text-align: center;">
+        <div style="color:#fccd2a">
+          <label>HORA FIM</label>
+        </div>
+        <ion-input value={{schedule.end_hour}}  readonly="true"></ion-input>
+      </div>
+      <div class="col-6" style="text-align: center;">
+        <div style="color:#fccd2a">
+          <label>TEMPO</label>
+        </div>
+        <ion-input value={{schedule.total_hours}}  readonly="true"></ion-input>
+      </div>
+      <ion-item-divider color="warning" style="min-height: 1px!important; margin-top: 30px; margin-bottom: 30px;">
+      </ion-item-divider>
+  </div>  
+</ion-list>

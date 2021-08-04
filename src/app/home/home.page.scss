@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 10%;
   transform: translateY(-50%);
 }
 
@@ -25,3 +25,8 @@
 #container a {
   text-decoration: none;
 }
+
+ion-content{
+  --ion-background-color:#00679c;
+}
+
