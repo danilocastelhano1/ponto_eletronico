@@ -17,15 +17,7 @@ export class HomePage implements OnInit{
     private loadingCtrl: LoadingService,
     private toast: ToasterService,
     private router: Router,
-  ) {
-    // this.router.events.pipe(
-    //   filter(event => event instanceof NavigationStart)
-    // ).subscribe((route: NavigationStart) => {
-    //   if(route.url === "/"){
-    //     this.getSchedules()
-    //   }
-    // })
-  }
+  ) {  }
 
   ngOnInit(){
     
@@ -39,7 +31,4 @@ export class HomePage implements OnInit{
     localStorage.removeItem('token');
     this.router.navigate(['/login']);
   }
-
-  
-
 }

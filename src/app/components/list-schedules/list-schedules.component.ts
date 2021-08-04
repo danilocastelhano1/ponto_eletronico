@@ -25,7 +25,7 @@ export class ListSchedulesComponent implements OnInit {
     this.router.events.pipe(
       filter(event => event instanceof NavigationStart)
     ).subscribe((route: NavigationStart) => {
-      if(route.url === "/home/episodes"){
+      if(route.url === "/"){
         this.getSchedules();       
       }
     })
